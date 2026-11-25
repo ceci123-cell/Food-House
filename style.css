@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #fff;
+}
+
+header {
+    min-height: 70px;
+    background: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 8%;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffc400;
+}
+
+.logo i {
+    margin-right: 8px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffc400;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffc400;
+    color: #111;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e5a900;
+}
+
+.hero {
+    min-height: 550px;
+    background:
+        linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.3)),
+        url("burger.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+}
+
+.hero-text {
+    max-width: 500px;
+    color: white;
+}
+
+.petit-titre {
+    color: #e9aa00;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #ffc400;
+}
+
+.hero-text > p:not(.petit-titre) {
+    margin-bottom: 30px;
+}
+
+.menu {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.menu h2,
+.contact h2,
+.about h2 {
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.carte {
+    width: 300px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.carte:hover {
+    transform: translateY(-8px);
+}
+
+.carte img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.carte-contenu {
+    padding: 20px;
+}
+
+.carte h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.carte p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.carte h4 {
+    color: #e5a900;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+button {
+    border: none;
+    background: #ffc400;
+    padding: 11px 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e5a900;
+}
+
+.about {
+    background: #111;
+    color: white;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    margin-bottom: 20px;
+}
+
+.about-text > p:not(.petit-titre) {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: flex;
+    gap: 20px;
+}
+
+.features div {
+    flex: 1;
+}
+
+.features h3 {
+    color: #ffc400;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.features h3 i {
+    margin-right: 5px;
+}
+
+.features p {
+    color: #bbb;
+    font-size: 13px;
+}
+
+.contact {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    height: 130px;
+    resize: none;
+}
+
+form button {
+    width: 120px;
+}
+
+.contact-info {
+    width: 40%;
+}
+
+.contact-info h3 {
+    margin-top: 15px;
+    color: #222;
+}
+
+.contact-info i {
+    color: #ffc400;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.contact-info p {
+    margin: 8px 0 15px;
+    color: #666;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.footer-logo {
+    color: #ffc400;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.reseaux {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.reseaux a {
+    color: #ffc400;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.reseaux a:hover {
+    color: white;
+}
+
+.copyright {
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #aaa;
+}
+
+@media (max-width: 900px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about {
+        gap: 30px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 40px 8%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .menu h2,
+    .contact h2,
+    .about h2 {
+        font-size: 30px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    form,
+    .contact-info {
+        width: 100%;
+    }
+}
